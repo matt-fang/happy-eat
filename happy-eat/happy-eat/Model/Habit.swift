@@ -11,12 +11,14 @@ struct Habit: Identifiable {
     var id: UUID = UUID()
     var name: String
     var benefits: [String]
-//    var science: [String]
     var mon: String
     var isActive: Bool = false
 
     var repetitionsCompleted: Int?
     var repetitionsRequired: Int = 15
+    
+    var actionPlan: String?
+    var frequencyGoal: Int?
 }
 
 var habits = [Habit(name: "Eat Veggies", benefits: ["be happier", "have more energy", "get nutrients"], mon: "galaceia"),
